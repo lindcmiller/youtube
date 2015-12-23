@@ -9,42 +9,70 @@
   <link rel="stylesheet" type="text/css" href="css/grid.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/youtube.js"></script>
 
+  <link class="favicon" rel="shortcut icon" href="favicon.ico" width="10rem">
   <title>YouTube</title>
 
 </head>
 <body>
   <header>
-    <div class="nav__top">
+    <div class="nav__top clearfix">
       <span class="nav__top-left">
-        <button class="button"><img src="navigation.svg" alt="navigation"></button>
+        <button class="button navigation" onclick="showHide()"></button>
+          <div class="navigation__expand">
+            <ul class="navigation__main">
+              <li><icon></icon>Home</li>
+              <li><icon></icon>My Channel</li>
+              <li><icon></icon>Trending</li>
+              <li><icon></icon>Subscriptions</li>
+              <li><icon></icon>History</li>
+              <li><icon></icon>Watch Later</li>
+
+              <ul>PLAYLISTS
+                <li><icon></icon>Liked Videos</li>
+              </ul>
+
+              <ul>SUBSCRIPTIONS
+                <ul>Add channels
+                  <li><icon></icon>Popular on YouTube</li>
+                  <li><icon></icon>Music</li>
+                  <li><icon></icon>Sports</li>
+                  <li><icon></icon>Gaming</li>
+                </ul>
+              </ul>
+
+              <li><icon></icon>Browse channels</li>
+              <li><icon></icon>Manage subscriptions</li>
+
+              <li><icon></icon>Manage subscriptions</li>
+            </ul>
+          </div>
         <button class="button logo"><img src="youtube.png" alt="youtube-logo" height=40px width=80px></button>
       </span>
 
       <span class="nav__top-center">
         <input class="search-box" />
-        <button class="button"><img src="search.svg" alt="search"></button>
+        <button class="button search"></button>
       </span>
 
       <span class="nav__top-right">
-        <button class="button">Upload</button>
-        <img src="" alt="user-img">
+        <button class="button upload">Upload</button>
+        <img class="user-img" src="user-img.png" alt="user-img">
       </span>
     </div>
 
     <div class="nav-row">
       <ul>
-        <li>Home</li>
-        <li>Trending</li>
-        <li>Subscription</li>
+        <li class="active">Home</li>
+        <li class="">Trending</li>
+        <li class="">Subscription</li>
       </ul>
     </div>
 
   </header>
 
-  <div class="navigation">
 
-  </div>
 
   <div class="wrapper">
     <h6>Watch It Again</h6>
@@ -52,7 +80,7 @@
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <a class="preview__heading">Lorem ipsum dolor sit amet</a>
         <div class="preview__author">by Lorem ipsum</div>
         <div class="preview__views">1,234,567 views</div>
         <div class="preview__date-posted">1 week ago</div>
@@ -88,6 +116,9 @@
         <div class="preview__author">by Lorem ipsum</div>
         <div class="preview__views">1,234,567 views</div>
         <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="show-more">
+        <h6>Show more</h6>
       </div>
     </div>
 
@@ -135,10 +166,105 @@
         <div class="preview__date-posted">1 week ago</div>
       </div>
     </div>
+
+    <h6>Recently Uploaded</h6>
+    <div class="row">
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <a class="preview__heading">Lorem ipsum dolor sit amet</a>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="show-more">
+        <h6>Show more</h6>
+      </div>
+    </div>
+
+    <h6>Popular Videos</h6>
+    <div class="row">
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <a class="preview__heading">Lorem ipsum dolor sit amet</a>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="preview pure-u-1-5">
+        <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
+        <div class="preview__time">3:06</div>
+        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
+        <div class="preview__author">by Lorem ipsum</div>
+        <div class="preview__views">1,234,567 views</div>
+        <div class="preview__date-posted">1 week ago</div>
+      </div>
+      <div class="show-more">
+        <h6>Show more</h6>
+      </div>
+    </div>
   </div>
 
   <footer>
-    <div class="nav">
+    <div class="nav__bottom">
       <button class="button logo"><img src="youtube.png" alt="youtube-logo" height=40px width=80px></button>
       <button class="button">Language: English</button>
       <button class="button">Country: Worldwide</button>
@@ -147,7 +273,7 @@
       <button class="button">Help</button>
     </div>
 
-    <div class="nav">
+    <div class="nav__bottom">
       <ul>
         <li>About</li>
         <li>Press</li>
@@ -159,7 +285,7 @@
       </ul>
     </div>
 
-    <div class="nav">
+    <div class="nav__bottom">
       <ul>
         <li>Terms</li>
         <li>Privacy</li>
