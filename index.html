@@ -29,18 +29,15 @@
               <li><icon></icon>History</li>
               <li><icon></icon>Watch Later</li>
 
-              <ul>PLAYLISTS
-                <li><icon></icon>Liked Videos</li>
-              </ul>
+              <li>PLAYLISTS</li>
+              <li><icon></icon>Liked Videos</li>
 
-              <ul>SUBSCRIPTIONS
-                <ul>Add channels
-                  <li><icon></icon>Popular on YouTube</li>
-                  <li><icon></icon>Music</li>
-                  <li><icon></icon>Sports</li>
-                  <li><icon></icon>Gaming</li>
-                </ul>
-              </ul>
+              <li>SUBSCRIPTIONS</li>
+              <li>Add channels</li>
+              <li><icon></icon>Popular on YouTube</li>
+              <li><icon></icon>Music</li>
+              <li><icon></icon>Sports</li>
+              <li><icon></icon>Gaming</li>
 
               <li><icon></icon>Browse channels</li>
               <li><icon></icon>Manage subscriptions</li>
@@ -53,20 +50,20 @@
 
       <span class="nav__top-center">
         <input class="search-box" />
-        <button class="button search"></button>
+        <button class="button__search"></button>
       </span>
 
       <span class="nav__top-right">
-        <button class="button upload">Upload</button>
+        <button class="button__upload">Upload</button>
         <img class="user-img" src="user-img.png" alt="user-img">
       </span>
     </div>
 
     <div class="nav-row">
       <ul>
-        <li class="active">Home</li>
-        <li class="">Trending</li>
-        <li class="">Subscription</li>
+        <li class="tab active" onclick="setActive()">Home</li>
+        <li class="tab" onclick="setActive()">Trending</li>
+        <li class="tab" onclick="setActive()">Subscription</li>
       </ul>
     </div>
 
@@ -80,42 +77,42 @@
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <a class="preview__heading">Lorem ipsum dolor sit amet</a>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"></a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago · </div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="show-more">
         <h6>Show more</h6>
@@ -128,42 +125,42 @@
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
     </div>
 
@@ -173,42 +170,42 @@
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
         <a class="preview__heading">Lorem ipsum dolor sit amet</a>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
 
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="show-more">
         <h6>Show more</h6>
@@ -221,41 +218,41 @@
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
         <a class="preview__heading">Lorem ipsum dolor sit amet</a>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
-        <div class="preview__heading">Lorem ipsum dolor sit amet</div>
-        <div class="preview__author">by Lorem ipsum</div>
-        <div class="preview__views">1,234,567 views</div>
-        <div class="preview__date-posted">1 week ago</div>
+        <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
+        <div class="preview__author">by <a>Lorem ipsum</a></div>
+        <div class="preview__stats">1,234,567 views · 1 week ago</div>
+
       </div>
       <div class="show-more">
         <h6>Show more</h6>
@@ -265,12 +262,12 @@
 
   <footer>
     <div class="nav__bottom">
-      <button class="button logo"><img src="youtube.png" alt="youtube-logo" height=40px width=80px></button>
-      <button class="button">Language: English</button>
-      <button class="button">Country: Worldwide</button>
-      <button class="button">Restricted Mode: Off</button>
-      <button class="button">History</button>
-      <button class="button">Help</button>
+      <button class=" logo"><img src="youtube.png" alt="youtube-logo" height=40px width=80px></button>
+      <button>Language: English</button>
+      <button>Country: Worldwide</button>
+      <button>Restricted Mode: Off</button>
+      <button>History</button>
+      <button>Help</button>
     </div>
 
     <div class="nav__bottom">
@@ -292,7 +289,7 @@
         <li>Policy & Safety</li>
         <li>Send feedback</li>
         <li>Try something new!</li>
-        <li>© 2015 YouTube, LLC</li>
+        <li class="copyright">© 2015 YouTube, LLC</li>
       </ul>
     </div>
 

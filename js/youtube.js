@@ -6,3 +6,9 @@ function showHide() {
     navigationExpand.style.display = "block";
   }
 };
+
+// function setActive() {
+//   var activeTab = document.querySelector(".tab");
+//   var allTabs = document.getElementsByClassName("tab");
+//   activeTab.style.className="active";
+// };
