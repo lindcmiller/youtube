@@ -17,49 +17,57 @@
 </head>
 <body>
   <header>
-    <div class="nav__top clearfix">
-      <span class="nav__top-left">
-        <button class="button navigation" onclick="showHide()"></button>
-          <div class="navigation__expand">
-            <ul class="navigation__main">
-              <li><icon></icon>Home</li>
-              <li><icon></icon>My Channel</li>
-              <li><icon></icon>Trending</li>
-              <li><icon></icon>Subscriptions</li>
-              <li><icon></icon>History</li>
-              <li><icon></icon>Watch Later</li>
+    <div class="nav__top-1 clearfix">
+      <span class="nav__top-1-left">
+        <button class="button nav" onclick="showHide()"></button>
+          <div class="nav__expand">
+            <ul class="nav__main">
+              <li><img class="nav__main-icon" src="icon__home-inactive.png" alt="home">Home</li>
+              <li><img class="nav__main-icon" src="icon__mychannel-inactive.png" alt="my-channel">My Channel</li>
+              <li><img class="nav__main-icon" src="icon__trending-inactive.png" alt="trending">Trending</li>
+              <li><img class="nav__main-icon" src="icon__subscriptions-inactive.png" alt="subscriptions">Subscriptions</li>
+              <li><img class="nav__main-icon" src="icon__history-inactive.png" alt="history">History</li>
+              <li><img class="nav__main-icon" src="icon__watchlater-inactive.png" alt="watch-later">Watch Later</li>
 
-              <li>PLAYLISTS</li>
-              <li><icon></icon>Liked Videos</li>
+              <div class="borders__top-bottom">
+                <li class="nav__main-subheading">Playlists</li>
+                <li><img class="nav__main-icon" src="icon__liked-inactive.png" alt="liked">Liked Videos</li>
+              </div>
 
-              <li>SUBSCRIPTIONS</li>
-              <li>Add channels</li>
-              <li><icon></icon>Popular on YouTube</li>
-              <li><icon></icon>Music</li>
-              <li><icon></icon>Sports</li>
-              <li><icon></icon>Gaming</li>
+              <li class="nav__main-subheading">Subscriptions</li>
+              <div class="section__subscription">
+                <div class="section__borders-allsides">
+                  <li class="highlight__blue">Add channels</li>
+                  <li><img class="nav__main-icon" src="popular.jpg" alt="popular"> Popular on YouTube</li>
+                  <li><img class="nav__main-icon" src="music.jpg" alt="music"> Music</li>
+                  <li><img class="nav__main-icon" src="sports.jpg" alt="sports"> Sports</li>
+                  <li><img class="nav__main-icon" src="gaming.jpg" alt="gaming"> Gaming</li>
+                </div>
+              </div>
 
-              <li><icon></icon>Browse channels</li>
-              <li><icon></icon>Manage subscriptions</li>
+              <div class="borders__top-bottom">
+                <li><img class="nav__main-icon" src="icon__browse-inactive.png" alt="browse">Browse channels</li>
+                <li><img class="nav__main-icon" src="icon__manage-inactive.png" alt="manage">Manage subscriptions</li>
+              </div>
 
-              <li><icon></icon>Manage subscriptions</li>
+              <li><img class="nav__main-icon" src="icon__youtubered-inactive.png" alt="youtube-red">YouTube Red</li>
             </ul>
           </div>
         <button class="button logo"><img src="youtube.png" alt="youtube-logo" height=40px width=80px></button>
       </span>
 
-      <span class="nav__top-center">
-        <input class="search-box" />
+      <span class="nav__top-1-center">
+        <input class="input__search" />
         <button class="button__search"></button>
       </span>
 
-      <span class="nav__top-right">
+      <span class="nav__top-1-right">
         <button class="button__upload">Upload</button>
         <img class="user-img" src="user-img.png" alt="user-img">
       </span>
     </div>
 
-    <div class="nav-row">
+    <div class="nav__top-2">
       <ul>
         <li class="tab active" onclick="setActive()">Home</li>
         <li class="tab" onclick="setActive()">Trending</li>
@@ -73,7 +81,7 @@
 
   <div class="wrapper">
     <h6>Watch It Again</h6>
-    <div class="row">
+    <div class="grid__row">
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
@@ -114,13 +122,10 @@
         <div class="preview__stats">1,234,567 views · 1 week ago</div>
 
       </div>
-      <!-- <div class="show-more">
-        <h6>Show more</h6>
-      </div> -->
     </div>
 
     <h6>Recommended</h6>
-    <div class="row">
+    <div class="grid__row">
 
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
@@ -160,7 +165,7 @@
     </div>
 
     <h6>Recently Uploaded</h6>
-    <div class="row">
+    <div class="grid__row">
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
@@ -195,14 +200,11 @@
         <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
         <div class="preview__author">by <a>Lorem ipsum</a></div>
         <div class="preview__stats">1,234,567 views · 1 week ago</div>
-      </div>
-      <div class="show-more">
-        <h6>Show more</h6>
       </div>
     </div>
 
     <h6>Popular Videos</h6>
-    <div class="row">
+    <div class="grid__row">
       <div class="preview pure-u-1-5">
         <img class="preview__img" src="placeholder.jpg" alt="placeholder-img">
         <div class="preview__time">3:06</div>
@@ -237,9 +239,6 @@
         <div class="preview__heading"><a>Lorem ipsum dolor sit amet</a></div>
         <div class="preview__author">by <a>Lorem ipsum</a></div>
         <div class="preview__stats">1,234,567 views · 1 week ago</div>
-      </div>
-      <div class="show-more">
-        <h6>Show more</h6>
       </div>
     </div>
   </div>

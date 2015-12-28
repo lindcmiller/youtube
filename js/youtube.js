@@ -1,9 +1,10 @@
 function showHide() {
-  var navigationExpand = document.querySelector(".navigation__expand");
-  if(navigationExpand.style.display !== "none") {
-    navigationExpand.style.display = "none";
+  var navExpand = document.querySelector(".nav__expand");
+
+  if(navExpand.style.display !== "none") {
+    navExpand.style.display = "none";
   } else {
-    navigationExpand.style.display = "block";
+    navExpand.style.display = "inline-block";
   }
 };
 
