@@ -10,21 +10,25 @@ function showHide() {
 
 function showHideLanguages() {
   var langExpand = document.querySelector(".language__expand");
+  var countryExpand = document.querySelector(".country__expand");
 
   if(langExpand.style.display !== "none") {
-    langExpand.style.display = "none";
+    langExpand.style.display = "none";  
   } else {
     langExpand.style.display = "block";
+    countryExpand.style.display = "none";
   }
 };
 
 function showHideCountries() {
+  var langExpand = document.querySelector(".language__expand");
   var countryExpand = document.querySelector(".country__expand");
 
   if(countryExpand.style.display !== "none") {
     countryExpand.style.display = "none";
   } else {
     countryExpand.style.display = "block";
+    langExpand.style.display = "none";
   }
 };
 
