@@ -48,6 +48,10 @@ button {
   outline: none;
 }
 
+button:hover {
+  background: #F0F0F0;
+}
+
 .input:focus {
   outline: 1px solid #1560BC;
 }
@@ -290,6 +294,10 @@ footer {
   align-items: center;
 }
 
+.nav__main li:last-child {
+  margin-top: 0.5rem;
+}
+
 .nav__main li:hover:not(.nav__main-subheading) {
   background-color: #000;
   color: #EEE;
@@ -329,10 +337,6 @@ footer {
   width: 181px;
   position: relative;
   padding: 0.1rem 0.2rem;
-  /*top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;*/
 }
 
 .highlight__blue {
@@ -345,6 +349,11 @@ footer {
   border-radius: 3px;
   margin: 0.2rem;
 }
+
+.youtube-red {
+  margin-top: 0.25rem;
+}
+
 /*MAIN CONTENT*/
 
 .wrapper {
