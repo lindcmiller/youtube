@@ -29,27 +29,27 @@
               <li><img class="nav__main-icon" src="images/icon__subscriptions-inactive.png" alt="subscriptions">Subscriptions</li>
               <li><img class="nav__main-icon" src="images/icon__history-inactive.png" alt="history">History</li>
               <li><img class="nav__main-icon" src="images/icon__watchlater-inactive.png" alt="watch-later">Watch Later</li> -->
-              <li><i class="fa fa-home"></i> Home</li>
-              <li><i class="fa fa-user"></i> My Channel</li>
-              <li><i class="fa fa-fire"></i> Trending</li>
-              <li><i class="fa fa-newspaper-o"></i> Subscriptions</li>
-              <li><i class="fa fa-hourglass-end"></i> History</li>
-              <li><i class="fa fa-clock-o"></i> Watch Later</li>
+              <li><i class="fa fa-home"></i>Home</li>
+              <li><i class="fa fa-user"></i>My Channel</li>
+              <li><i class="fa fa-fire"></i>Trending</li>
+              <li><i class="fa fa-newspaper-o"></i>Subscriptions</li>
+              <li><i class="fa fa-hourglass-end"></i>History</li>
+              <li><i class="fa fa-clock-o"></i>Watch Later</li>
 
               <div class="borders__top-bottom">
                 <li class="nav__main-subheading">Playlists</li>
                 <!-- <li><img class="nav__main-icon" src="images/icon__liked-inactive.png" alt="liked">Liked Videos</li> -->
-                <li><i class="fa fa-thumbs-up"></i> Liked Videos</li>
+                <li><i class="fa fa-thumbs-up"></i>Liked Videos</li>
               </div>
 
               <li class="nav__main-subheading">Subscriptions</li>
               <div class="section__subscription">
                 <div class="section__borders-allsides">
-                  <li class="highlight__blue"> Add channels</li>
-                  <li><img class="nav__main-icon icon__sub" src="images/popular.jpg" alt="popular"> Popular on YouTube</li>
-                  <li><img class="nav__main-icon icon__sub" src="images/music.jpg" alt="music"> Music</li>
-                  <li><img class="nav__main-icon icon__sub" src="images/sports.jpg" alt="sports"> Sports</li>
-                  <li><img class="nav__main-icon icon__sub" src="images/gaming.jpg" alt="gaming"> Gaming</li>
+                  <li class="button__blue">Add channels</li>
+                  <li><img class="nav__main-icon icon__sub" src="images/popular.jpg" alt="popular">Popular on YouTube</li>
+                  <li><img class="nav__main-icon icon__sub" src="images/music.jpg" alt="music">Music</li>
+                  <li><img class="nav__main-icon icon__sub" src="images/sports.jpg" alt="sports">Sports</li>
+                  <li><img class="nav__main-icon icon__sub" src="images/gaming.jpg" alt="gaming">Gaming</li>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@
 
     <div class="nav__top-2">
       <ul>
-        <li class="tab active" onclick="setActive()">Home</li>
+        <li class="tab active__underline" onclick="setActive()">Home</li>
         <li class="tab" onclick="setActive()">Trending</li>
         <li class="tab" onclick="setActive()">Subscription</li>
       </ul>
@@ -90,7 +90,7 @@
   </header>
 
 
-
+<div class="content__right">
   <div class="wrapper">
     <h6>Watch It Again</h6>
     <div class="grid__row">
@@ -256,30 +256,45 @@
   </div>
 
   <footer>
-    <div class="nav__bottom">
+    <div class="nav__bottom-1">
       <button class=" logo"><img src="images/youtube.png" alt="youtube-logo" height=40px width=80px></button>
-      <button><img class="nav__bottom-icon" src="images/icon__language.png" alt="language"> Language: English <img class="nav__bottom-icon arrow" src="images/icon__arrow-down.png" alt="drop-down"></button>
-      <button>Country: Worldwide <img class="nav__bottom-icon arrow" src="images/icon__arrow-down.png" alt="drop-down"></button>
-      <button>Restricted Mode: Off <img class="nav__bottom-icon arrow" src="images/icon__arrow-down.png" alt="drop-down"></button>
-      <!-- <button><img class="nav__bottom-icon" src="images/icon__history-large.png" alt="history"> History</button>
-      <button><img class="nav__bottom-icon" src="images/icon__help.png" alt="help"> Help</button> -->
-      <button><i class="fa fa-hourglass-end icon__bottom"></i> History</button>
-      <button><i class="fa fa-question-circle icon__bottom"></i> Help</button>
+      <button onclick="showHideLanguages()"><img class="icon__language" src="images/icon__language.png" alt="language"> Language: English <i class="fa fa-caret-down"></i></button>
+      <button onclick="showHideCountries()">Country: Worldwide <i class="fa fa-caret-down"></i></button>
+
+      <button>Restricted Mode: Off <i class="fa fa-caret-down"></i></button>
+      <button><i class="fa fa-hourglass-end icon__bottom"></i>History</button>
+      <button><i class="fa fa-question-circle icon__bottom"></i>Help</button>
+
     </div>
 
-    <div class="nav__bottom">
-      <ul>
-        <li>About</li>
-        <li>Press</li>
-        <li>Copyright</li>
-        <li>Creators</li>
-        <li>Advertise</li>
-        <li>Developers</li>
-        <li>+YouTube</li>
-      </ul>
+    <div class="language__expand">
+      <div class="footer__sub-heading">Choose your language</div>
+      <p>This changes the language of the site. It won't change any text entered by users.</p>
+      <img src="images/language.png">
     </div>
 
-    <div class="nav__bottom">
+    <div class="country__expand">
+      <div class="footer__sub-heading">Choose your content location</div>
+      <p>This changes the videos and channels shown to you. It won't change the language of the site.</p>
+      <img src="images/country.png">
+    </div>
+
+    <div class="border__top">
+    </div>
+      <div class="nav__bottom-2">
+        <ul>
+          <li>About</li>
+          <li>Press</li>
+          <li>Copyright</li>
+          <li>Creators</li>
+          <li>Advertise</li>
+          <li>Developers</li>
+          <li>+YouTube</li>
+        </ul>
+      </div>
+
+
+    <div class="nav__bottom-3">
       <ul>
         <li>Terms</li>
         <li>Privacy</li>
@@ -291,6 +306,7 @@
     </div>
 
   </footer>
+</div>
 
 </body>
 </html>
