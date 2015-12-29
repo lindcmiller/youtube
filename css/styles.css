@@ -232,6 +232,7 @@ header {
 .nav__top-2 ul li:hover,
 .active__underline {
   border-bottom: 3px solid #CE1312;
+  color: red;
 }
 
 /*FOOTER ONLY*/

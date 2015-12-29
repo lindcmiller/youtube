@@ -13,7 +13,7 @@ function showHideLanguages() {
   var countryExpand = document.querySelector(".country__expand");
 
   if(langExpand.style.display !== "none") {
-    langExpand.style.display = "none";  
+    langExpand.style.display = "none";
   } else {
     langExpand.style.display = "block";
     countryExpand.style.display = "none";
@@ -32,8 +32,18 @@ function showHideCountries() {
   }
 };
 
-// function setActive() {
-//   var activeTab = document.querySelector(".tab");
-//   var allTabs = document.getElementsByClassName("tab");
-//   activeTab.style.className="active";
-// };
+window.onload = function()  {
+  var activeTab = document.querySelector("li.tab");
+  activeTab.addEventListener( 'click' , setActive() );
+};
+
+function setActive() {
+  var activeTab = document.querySelector("li.tab");
+  var allTabs = document.getElementsByClassName("li.tab");
+  for(var index = 0; index < allTabs.length; index++) {
+    if (allTabs[index].className === 'active__underline') {
+      allTabs.classList.remove('active__underline');
+    }
+  }
+  activeTab.className = "active__underline";
+};
