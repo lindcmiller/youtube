@@ -47,7 +47,6 @@ h6 {
 small, .font_small {font-size: 0.75em;}
 
 a:hover {
-  color: #0678C9;
   text-decoration: underline;
 }
 
@@ -82,14 +81,18 @@ ul {
   color: #B8B8B8;
 }
 
-.nav__expand-ul li .fa {
+.nav__expand-main-icon {
   padding: 0 0.75rem;
-  color: #888888;
+  color: #888;
   font-size: 1rem;
   width: 1rem;
 }
 
-.nav__expand-ul-icon {
+.active__fill-icon {
+  color: #FFF;
+}
+
+.nav__expand-sub-icon {
   height: 1.1rem;
   width: 1.2rem;
   padding: 0 0.7rem;
@@ -184,7 +187,7 @@ header {
 
   .button__search {
     background: #F8F8F8;
-    height: 30px;
+    height: 28px;
     width: 4.2rem;
     border: 1px solid #C3C3C4;
     margin-left: -0.1rem;
@@ -255,10 +258,11 @@ footer {
 .nav__bottom-1 {
   padding: 0.25rem 0;
   width: 95%;
-  margin-left: 1.8rem;
+  margin-left: 2.2rem;
 }
 
-  .nav__bottom-1 button:not(.logo) {
+  .button__nav-bottom,
+  .button__save {
     background-color: #F8F8F8;
     font-size: 12px;
     border: 1px solid #D3D3D3;
@@ -297,10 +301,15 @@ footer {
   font-weight: 400;
 }
 
+.active__darken {
+  background: #E9E9E9;
+}
+
 /*EXPANDED BOTTOM NAV*/
 
 .language__expand,
-.country__expand {
+.country__expand,
+.restricted__expand {
   display: none;
   width: 100%;
   margin: 1.2rem 0 0.15rem 3rem;
@@ -309,6 +318,25 @@ footer {
 .footer__sub-heading {
   font-size: 0.9em;
   margin-bottom: -0.7rem;
+}
+
+.form__restricted {
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 0.5rem;
+  width: 95%;
+}
+
+.form__restricted input {
+  margin: 0.3rem 0.5rem 0;
+}
+
+.button__save {
+  margin: 0 0 4rem 0;
+}
+
+.restricted__expand p {
+  margin: 0;
 }
 
 /* EXPANDED NAV: SIDEBAR */
@@ -333,7 +361,7 @@ footer {
   padding-left: 0;
 }
 
-.nav__expand-ul-subheading {
+.nav__expand-subheading {
   color: #CE1312;
   font-size: 11px;
   font-weight: 500;
@@ -342,22 +370,21 @@ footer {
 }
 
 .borders__top-bottom {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding: 0.5rem 0;
   margin-top: 0.5rem;
   border-top: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
 }
 
 .nav__expand-tab:not(.button__blue),
-.nav__expand-ul-subheading,
+.nav__expand-subheading,
 .section__subscription {
   line-height: 1.8rem;
   display: flex;
   align-items: center;
 }
 
-.nav__expand-tab:hover:not(.nav__expand-ul-subheading),
+.nav__expand-tab:hover:not(.nav__expand-subheading),
 .nav__expand-tab:hover .fa {
   background-color: #444;
   color: #FFF;
@@ -369,7 +396,7 @@ footer {
 }
 
 .section__borders-allsides {
-  padding: 0.25rem;
+  padding: 0.25rem 0.25rem 0.1rem 0.25rem;
   border: 1px solid #E8E8E8;
 }
 
@@ -401,7 +428,7 @@ footer {
   font-size: 11px;
   text-align: center;
   border-radius: 3px;
-  margin: 0.1rem;
+  margin: 0.1rem 0.1rem 0.2rem 0.1rem;
 }
 
 .youtube-red {
@@ -412,7 +439,7 @@ footer {
 
 .wrapper {
   width: 85%;
-  max-width: 1000px;
+  max-width: 1262px;
   padding: 0.5rem 1.25rem;
   margin: 6.5rem auto 3rem;
   border: 1px solid #E8E8E8;
@@ -440,7 +467,7 @@ footer {
 
 .preview__img {
   max-height: 110px;
-  width: 184px;
+  width: 196px;
   position: relative;
 }
 
@@ -462,10 +489,18 @@ footer {
   text-overflow: ellipsis;
 }
 
+.preview__author a:hover {
+  color: #0678C9;
+}
+
 /*EXTRAS*/
 
 .clearfix:after {
    clear: both;
    content: "";
    display: table;
+}
+
+.spacer__top {
+  margin-top: 0.75rem;
 }
