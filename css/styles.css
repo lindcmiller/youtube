@@ -224,15 +224,15 @@ header {
   align-items: center;
 }
 
-.nav__top-2 ul li {
-  border-bottom: 3px solid transparent;
-  padding: 0.7rem 0;
-}
-
 .nav__top-2 ul li:hover,
 .active__underline {
   border-bottom: 3px solid #CE1312;
   color: red;
+}
+
+.nav__top-2 ul li {
+  border-bottom: 3px solid transparent;
+  padding: 0.7rem 0;
 }
 
 /*FOOTER ONLY*/

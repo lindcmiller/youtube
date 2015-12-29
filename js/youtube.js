@@ -8,6 +8,8 @@ function showHide() {
   }
 };
 
+//make these reusable for both 
+
 function showHideLanguages() {
   var langExpand = document.querySelector(".language__expand");
   var countryExpand = document.querySelector(".country__expand");
@@ -33,17 +35,13 @@ function showHideCountries() {
 };
 
 window.onload = function()  {
-  var activeTab = document.querySelector("li.tab");
-  activeTab.addEventListener( 'click' , setActive() );
+  var allTabs = document.getElementsByClassName("tab");
+  for(var index = 0; index < allTabs.length; index++) {
+    allTabs[index].addEventListener( 'click' , setActive );
+  }
 };
 
-function setActive() {
-  var activeTab = document.querySelector("li.tab");
-  var allTabs = document.getElementsByClassName("li.tab");
-  for(var index = 0; index < allTabs.length; index++) {
-    if (allTabs[index].className === 'active__underline') {
-      allTabs.classList.remove('active__underline');
-    }
-  }
-  activeTab.className = "active__underline";
+function setActive(event) {
+  document.querySelector(".active__underline").classList.remove('active__underline');
+  event.target.classList.add('active__underline');
 };
