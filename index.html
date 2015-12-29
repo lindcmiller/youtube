@@ -23,12 +23,6 @@
         <button class="button icon__nav" onclick="showHide()"><i class="fa fa-bars icon__nav"></i></button>
           <div class="nav__expand">
             <ul class="nav__main">
-              <!-- <li><img class="nav__main-icon" src="images/icon__home-inactive.png" alt="home">Home</li>
-              <li><img class="nav__main-icon" src="images/icon__mychannel-inactive.png" alt="my-channel">My Channel</li>
-              <li><img class="nav__main-icon" src="images/icon__trending-inactive.png" alt="trending">Trending</li>
-              <li><img class="nav__main-icon" src="images/icon__subscriptions-inactive.png" alt="subscriptions">Subscriptions</li>
-              <li><img class="nav__main-icon" src="images/icon__history-inactive.png" alt="history">History</li>
-              <li><img class="nav__main-icon" src="images/icon__watchlater-inactive.png" alt="watch-later">Watch Later</li> -->
               <li><i class="fa fa-home"></i>Home</li>
               <li><i class="fa fa-user"></i>My Channel</li>
               <li><i class="fa fa-fire"></i>Trending</li>
@@ -38,7 +32,6 @@
 
               <div class="borders__top-bottom">
                 <li class="nav__main-subheading">Playlists</li>
-                <!-- <li><img class="nav__main-icon" src="images/icon__liked-inactive.png" alt="liked">Liked Videos</li> -->
                 <li><i class="fa fa-thumbs-up"></i>Liked Videos</li>
               </div>
 
@@ -54,13 +47,10 @@
               </div>
 
               <div class="borders__top-bottom">
-                <!-- <li><img class="nav__main-icon" src="images/icon__browse-inactive.png" alt="browse">Browse channels</li>
-                <li><img class="nav__main-icon" src="images/icon__manage-inactive.png" alt="manage">Manage subscriptions</li> -->
                 <li><i class="fa fa-plus-circle"></i> Browse channels</li>
                 <li><i class="fa fa-cog"></i> Manage subscriptions</li>
               </div>
 
-              <!-- <li class="youtube-red"><img class="nav__main-icon" src="images/icon__youtubered-inactive.png" alt="youtube-red">YouTube Red</li> -->
               <li class="youtube-red"><i class="fa fa-youtube-play"></i>YouTube Red</li>
 
             </ul>
@@ -80,10 +70,10 @@
     </div>
 
     <div class="nav__top-2">
-      <ul>
-        <li class="tab active__underline" onclick="setActive()">Home</li>
-        <li class="tab" onclick="setActive()">Trending</li>
-        <li class="tab" onclick="setActive()">Subscription</li>
+      <ul onclick="setActive()">
+        <li class="tab active__underline">Home</li>
+        <li class="tab">Trending</li>
+        <li class="tab">Subscription</li>
       </ul>
     </div>
 
@@ -292,7 +282,6 @@
           <li>+YouTube</li>
         </ul>
       </div>
-
 
     <div class="nav__bottom-3">
       <ul>
