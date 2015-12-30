@@ -54,7 +54,7 @@ button {
   outline: none;
 }
 
-button:hover:not(.logo):not(.icon__nav):not(.button__delete) {
+button:hover:not(.button__transparent) {
   background: #F0F0F0;
   color: #565656;
 }
@@ -480,7 +480,7 @@ footer {
   margin: 0.5em 0;
 }
 
-  .grid__row:not(:last-child) {
+  .grid__row:not(.first-child):not(:last-child) {
     border-bottom: 1px solid #E8E8E8;
   }
 
