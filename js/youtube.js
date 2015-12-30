@@ -1,5 +1,5 @@
 function showHide() {
-  var navExpand = document.querySelector(".nav__expand");
+  var navExpand = document.querySelector(".nav__left-expand");
   var pushContentRight = document.querySelector(".content__right");
   var pushNavRight = document.querySelector(".nav__right");
 
@@ -65,7 +65,7 @@ window.onload = function()  {
     allCenterTabs[index].addEventListener( 'click' , setActiveUnderline );
   }
 
-  var allExpandTabs = document.getElementsByClassName("nav__expand-tab");
+  var allExpandTabs = document.getElementsByClassName("nav__left-expand-tab");
   for(var index = 0; index < allExpandTabs.length; index++) {
     allExpandTabs[index].addEventListener( 'click' , setActiveFill );
   }
@@ -81,7 +81,7 @@ function setActiveUnderline(event) {
   event.target.classList.add('active__underline');
 };
 
-// will set class to only icon if specifically clicked 
+// will set class to only icon if specifically clicked
 function setActiveFill(event) {
   var allExpandTabs = document.querySelectorAll('.active__fill');
   for(var index = 0; index < allExpandTabs.length; index++) {
