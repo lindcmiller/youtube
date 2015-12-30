@@ -60,7 +60,7 @@ function showHideRestricted() {
 };
 
 window.onload = function()  {
-  var allCenterTabs = document.getElementsByClassName("tab");
+  var allCenterTabs = document.getElementsByClassName("nav__top-2-tab");
   for(var index = 0; index < allCenterTabs.length; index++) {
     allCenterTabs[index].addEventListener( 'click' , setActiveUnderline );
   }
