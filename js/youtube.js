@@ -49,7 +49,7 @@ function showHideRestricted() {
   var langExpand = document.querySelector(".language__expand");
   var countryExpand = document.querySelector(".country__expand");
   var restrictedExpand = document.querySelector(".restricted__expand");
-  
+
   if(restrictedExpand.style.display !== "none") {
     restrictedExpand.style.display = "none";
   } else {
@@ -81,13 +81,19 @@ function setActiveUnderline(event) {
   event.target.classList.add('active__underline');
 };
 
+// will set class to only icon if specifically clicked 
 function setActiveFill(event) {
-  document.querySelector('.active__fill').classList.remove('active__fill' );
+  var allExpandTabs = document.querySelectorAll('.active__fill');
+  for(var index = 0; index < allExpandTabs.length; index++) {
+    allExpandTabs[index].classList.remove('active__fill');
+  }
   event.target.classList.add('active__fill');
-
-  // document.querySelector(".active__fill-icon").classList.remove('active__fill-icon');
-  // event.target.classList.add('active__fill-icon');
 };
+
+// function setActiveFill(event) {
+//   document.querySelector('.active__fill').classList.remove('active__fill');
+//   event.target.classList.add('active__fill');
+// };
 
 function setActiveDarken(event) {
   if (document.querySelector('.active__darken') == null) {

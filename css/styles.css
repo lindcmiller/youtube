@@ -385,7 +385,7 @@ footer {
 }
 
 .nav__expand-tab:hover:not(.nav__expand-subheading),
-.nav__expand-tab:hover .fa {
+.nav__expand-tab:hover .nav__expand-main-icon {
   background-color: #444;
   color: #FFF;
 }
