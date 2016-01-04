@@ -3,7 +3,7 @@ function showHide() {
   var pushContentRight = document.querySelector(".content__right");
   var pushNavRight = document.querySelector(".nav__right");
 
-  if(navExpand.style.display !== "none") {
+  if(navExpand.style.display == "inline-block") {
     navExpand.style.display = "none";
     pushContentRight.style.padding = "0";
     pushNavRight.style.padding = "0";
@@ -12,17 +12,15 @@ function showHide() {
     pushContentRight.style.padding = "0 0 0 225px";
     pushNavRight.style.padding = "0 0 0 225px";
   }
+
 };
-
-//make these reusable for both
-
 
 function showHideLanguages() {
   var langExpand = document.querySelector(".language__expand");
   var countryExpand = document.querySelector(".country__expand");
   var restrictedExpand = document.querySelector(".restricted__expand");
 
-  if(langExpand.style.display !== "none") {
+  if(langExpand.style.display == "block") {
     langExpand.style.display = "none";
   } else {
     langExpand.style.display = "block";
@@ -36,7 +34,7 @@ function showHideCountries() {
   var countryExpand = document.querySelector(".country__expand");
   var restrictedExpand = document.querySelector(".restricted__expand");
 
-  if(countryExpand.style.display !== "none") {
+  if(countryExpand.style.display == "block") {
     countryExpand.style.display = "none";
   } else {
     countryExpand.style.display = "block";
@@ -50,7 +48,7 @@ function showHideRestricted() {
   var countryExpand = document.querySelector(".country__expand");
   var restrictedExpand = document.querySelector(".restricted__expand");
 
-  if(restrictedExpand.style.display !== "none") {
+  if(restrictedExpand.style.display == "block") {
     restrictedExpand.style.display = "none";
   } else {
     restrictedExpand.style.display = "block";
