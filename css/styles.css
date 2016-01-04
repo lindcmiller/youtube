@@ -54,6 +54,10 @@ button {
   outline: none;
 }
 
+button:not(.button__search) {
+  border-radius: 3px;
+}
+
 button:hover:not(.button__transparent) {
   background: #F0F0F0;
   color: #565656;
@@ -141,10 +145,8 @@ header {
 
   .input__search {
     width: 582px;
-    height: 24px;
     font-size: 16px;
-    margin-left: -0.1rem;
-    padding: 0 0.5rem;
+    padding-left: 0.4rem;
   }
 
   .input__search:focus {
@@ -419,7 +421,7 @@ footer {
 
   .icon__nav-bottom {
     padding: 0 0.5rem 0 0.25rem;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     color: #808080;
   }
 
@@ -447,15 +449,14 @@ footer {
 .wrapper {
   width: 85%;
   max-width: 1262px;
-  padding: 0.5rem 1.25rem;
-  margin: 6.5rem auto 3rem;
+  margin: 7rem auto 3rem;
   border: 1px solid #E8E8E8;
 }
 
 .grid__row-top {
   display: flex;
   align-items: center;
-  margin-bottom: -0.5rem;
+  margin: 0.6rem 0 0 0.6rem;
 }
 
 .grid__row-heading {
@@ -472,24 +473,19 @@ footer {
     justify-content: flex-end;
   }
 
-.grid__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  margin: 0.5em 0;
-}
-
   .grid__row:not(.first-child):not(:last-child) {
     border-bottom: 1px solid #E8E8E8;
   }
 
+  .preview(:first-child) {
+    padding-left: 1rem;
+  }
+
 .preview {
   font-size: 12px;
-  padding-bottom: 1rem;
-  margin: 0 0.5rem;
+  padding: 0 0 1rem 0;
   position: relative;
-  overflow: hidden;
+  margin: 0 auto;
 }
 
   .preview__img {
@@ -500,8 +496,8 @@ footer {
 
   .preview__time {
     position: absolute;
-    bottom: 4.7rem;
-    right: -1px;
+    bottom: 4.75rem;
+    right: 0.6rem;
     color: #FFF;
     background: rgba(0,0,0,0.8);
     padding: 0 0.2rem;
