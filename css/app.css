@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   font-size: 1em;
   margin: 0;
@@ -492,6 +491,8 @@ footer {
   }
 
 .preview {
+  max-width: 210px;
+  min-width: 196px;
   font-size: 12px;
   padding: 0 0.25rem 1rem 0.25rem;
   position: relative;
@@ -502,7 +503,6 @@ footer {
     max-height: 110px;
     max-width: 196px;
     min-width: 196px;
-    width: 100%;
     position: relative;
   }
 
@@ -510,10 +510,11 @@ footer {
     width: 2rem;
     position: absolute;
     bottom: 4.75rem;
-    right: 0.45rem;
+    right: 0.65rem;
     color: #FFF;
     background: rgba(0,0,0,0.8);
     padding: 0 0.2rem;
+    text-align: center;
   }
 
   .preview__heading {
