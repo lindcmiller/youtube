@@ -162,14 +162,14 @@ header {
     height: 28px;
     width: 4.2rem;
     border: 1px solid #C3C3C4;
-    margin-left: -0.1rem;
+    margin-left: -0.05rem;
     display: inline-flex;
     justify-content: center;
   }
 
   .fa-search {
     color: #969696;
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
   }
 
   .button__search:hover .fa {
