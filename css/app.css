@@ -41,10 +41,7 @@ h3 {font-size: 1.777em;}
 
 h4 {font-size: 1.333em;}
 
-h6 {
-  font-size: 0.9em;
-  margin: 0.5em;
-}
+h6 {font-size: 0.9em;}
 
 small, .font_small {font-size: 0.75em;}
 
@@ -448,11 +445,12 @@ footer {
 /*MAIN CONTENT*/
 
 .wrapper {
-  width: 85%;
+  width: auto;
   max-width: 1262px;
   min-width: 438px;
   margin: 7rem auto 3rem;
   border: 1px solid #E8E8E8;
+  padding: 0 14px;
 }
 
 .grid__row-top {
@@ -460,12 +458,11 @@ footer {
   align-items: center;
   padding: 0.6rem 0 0.2rem;
   margin: 0 auto;
-  width: 98.5%;
 }
 
 .grid__row-heading {
   display: flex;
-  margin-right: auto;
+  margin: 0.5rem auto 0.5rem 0.25rem;
 }
 
   .button__delete {
@@ -478,8 +475,7 @@ footer {
   }
 
   .grid__row {
-    width: 98%;
-    margin: 0 auto
+    margin: 0 auto;
   }
 
   .grid__row:not(.first-child):not(:last-child) {
@@ -492,7 +488,6 @@ footer {
 
 .preview {
   max-width: 210px;
-  min-width: 196px;
   font-size: 12px;
   padding: 0 0.25rem 1rem 0.25rem;
   position: relative;
