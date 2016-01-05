@@ -80,13 +80,18 @@ function setActiveUnderline(event) {
 };
 
 // will set class to only icon if specifically clicked
+
 function setActiveFill(event) {
-  var allExpandTabs = document.querySelectorAll('.active__fill');
-  for(var index = 0; index < allExpandTabs.length; index++) {
-    allExpandTabs[index].classList.remove('active__fill');
-  }
-  event.target.classList.add('active__fill');
+ var allExpandTabs = document.querySelectorAll('.active__fill');
+ for(var index = 0; index < allExpandTabs.length; index++) {
+   allExpandTabs[index].classList.remove('active__fill');
+ }
+ event.target.classList.add('active__fill');
 };
+//  $ function setActiveFill(this) {
+//   $('.nav__left-expand-tab').attr("class","");
+//   $(this).attr("class", "active__fill");
+// };
 
 // function setActiveFill(event) {
 //   document.querySelector('.active__fill').classList.remove('active__fill');

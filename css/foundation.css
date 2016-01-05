@@ -354,7 +354,7 @@ th {
   margin-left: 0;
   margin-right: 0; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 1116px) {
   .medium-1 {
     width: 8.33333%; }
   .medium-push-1 {
@@ -558,7 +558,7 @@ th {
     margin-left: 0;
     margin-right: 0; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1320px) {
   .large-1 {
     width: 8.33333%; }
   .large-push-1 {

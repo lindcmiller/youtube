@@ -451,6 +451,7 @@ footer {
 .wrapper {
   width: 85%;
   max-width: 1262px;
+  min-width: 438px;
   margin: 7rem auto 3rem;
   border: 1px solid #E8E8E8;
 }
@@ -499,6 +500,8 @@ footer {
 
   .preview__img {
     max-height: 110px;
+    max-width: 196px;
+    min-width: 196px;
     width: 100%;
     position: relative;
   }
@@ -506,9 +509,8 @@ footer {
   .preview__time {
     width: 2rem;
     position: absolute;
-    float: right;
     bottom: 4.75rem;
-    right: 0.35rem;
+    right: 0.45rem;
     color: #FFF;
     background: rgba(0,0,0,0.8);
     padding: 0 0.2rem;
