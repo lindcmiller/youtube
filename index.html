@@ -2,17 +2,12 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/app.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="js/youtube.js"></script>
 
   <link class="favicon" sizes="48x48" href="images/favicon.ico">
   <title>YouTube</title>
@@ -25,91 +20,89 @@
         <button class="button__transparent icon__nav" onclick="showHide()">
           <i class="fa fa-bars icon__nav"></i>
         </button>
-          <div class="nav__left-expand">
-            <ul class="nav__left-expand-ul">
+          <div class="sidebar">
+            <ul class="sidebar__ul">
+              <li class="sidebar__tab active__fill">
+                <i class="fa fa-home icon__sidebar-main active__fill"></i>
+                <label>Home</label>
+              </li>
+              <li class="sidebar__tab">
+                <i class="fa fa-user icon__sidebar-main"></i>
+                <label>My Channel</label>
+              </li>
+              <li class="sidebar__tab">
+                <i class="fa fa-fire icon__sidebar-main"></i>
+                <label>Trending</label>
+              </li>
+              <li class="sidebar__tab">
+                <i class="fa fa-newspaper-o icon__sidebar-main"></i>
+                <label>Subscriptions</label>
+              </li>
+              <li class="sidebar__tab">
+                <i class="fa fa-hourglass-end icon__sidebar-main"></i>
+                <label>History</label>
+              </li>
+              <li class="sidebar__tab">
+                <i class="fa fa-clock-o icon__sidebar-main"></i>
+                <label>Watch Later</label>
+              </li>
+            </ul>
 
-              <li class="nav__left-expand-tab active__fill">
-                <i class="fa fa-home icon__nav-expand-main active__fill"></i>
-                Home
+            <ul class="sidebar__ul borders__top-bottom">
+              <a class="sidebar__subheading">Playlists</a>
+              <li class="sidebar__tab">
+                <i class="fa fa-thumbs-up icon__sidebar-main"></i>
+                <label>Liked Videos</label>
               </li>
-              <li class="nav__left-expand-tab">
-                <i class="fa fa-user icon__nav-expand-main"></i>
-                My Channel
-              </li>
-              <li class="nav__left-expand-tab">
-                <i class="fa fa-fire icon__nav-expand-main"></i>
-                Trending
-              </li>
-              <li class="nav__left-expand-tab">
-                <i class="fa fa-newspaper-o icon__nav-expand-main"></i>
-                Subscriptions
-              </li>
-              <li class="nav__left-expand-tab">
-                <i class="fa fa-hourglass-end icon__nav-expand-main"></i>
-                History
-              </li>
-              <li class="nav__left-expand-tab">
-                <i class="fa fa-clock-o icon__nav-expand-main"></i>
-                Watch Later
-              </li>
+            </ul>
 
-              <div class="borders__top-bottom">
-                <li class="nav__left-expand-subheading">
-                  <a>Playlists</a>
-                </li>
-                <li class="nav__left-expand-tab">
-                  <i class="fa fa-thumbs-up icon__nav-expand-main"></i>
-                  Liked Videos
-                </li>
-              </div>
-
-              <li class="nav__left-expand-subheading"><a>Subscriptions</a></li>
-              <div class="section__subscription">
+            <ul class="sidebar__ul">
+              <a class="sidebar__subheading">Subscriptions</a>
+              <div class="sidebar__section">
                 <div class="section__borders-allsides">
-                  <li class="button__blue">
-                    Add channels
+                  <button class="button__sidebar">Add channels</button>
+                  <li class="sidebar__section-li">
+                    <img class="icon__sidebar-sub" src="images/popular.jpg" alt="popular">
+                    <label>Popular on YouTube</label>
                   </li>
-                  <li class="section__subscription-li">
-                    <img class="icon__nav-expand-sub" src="images/popular.jpg" alt="popular">
-                    Popular on YouTube
+                  <li class="sidebar__section-li">
+                    <img class="icon__sidebar-sub" src="images/music.jpg" alt="music">
+                    <label>Music</label>
                   </li>
-                  <li class="section__subscription-li">
-                    <img class="icon__nav-expand-sub" src="images/music.jpg" alt="music">
-                    Music
+                  <li class="sidebar__section-li">
+                    <img class="icon__sidebar-sub" src="images/sports.jpg" alt="sports">
+                    <label>Sports</label>
                   </li>
-                  <li class="section__subscription-li">
-                    <img class="icon__nav-expand-sub" src="images/sports.jpg" alt="sports">
-                    Sports
-                  </li>
-                  <li class="section__subscription-li">
-                    <img class="icon__nav-expand-sub" src="images/gaming.jpg" alt="gaming">
-                    Gaming
+                  <li class="sidebar__section-li">
+                    <img class="icon__sidebar-sub" src="images/gaming.jpg" alt="gaming">
+                    <label>Gaming</label>
                   </li>
                 </div>
               </div>
+            </ul>
 
-              <div class="borders__top-bottom">
-                <li class="nav__left-expand-tab">
-                  <i class="fa fa-plus-circle icon__nav-expand-main"></i>
-                  Browse channels
-                </li>
-                <li class="nav__left-expand-tab">
-                  <i class="fa fa-cog icon__nav-expand-main"></i>
-                  Manage subscriptions
-                </li>
-              </div>
-
-              <li class="nav__left-expand-tab">
-                <i class="fa fa-youtube-play icon__nav-expand-main"></i>
-                YouTube Red
+            <ul class="sidebar__ul borders__top-bottom">
+              <li class="sidebar__tab">
+                <i class="fa fa-plus-circle icon__sidebar-main"></i>
+                <label>Browse channels</label>
               </li>
+              <li class="sidebar__tab">
+                <i class="fa fa-cog icon__sidebar-main"></i>
+                <label>Manage subscriptions</label>
+              </li>
+            </ul>
 
+            <ul class="sidebar__ul">
+              <li class="sidebar__tab">
+                <i class="fa fa-youtube-play icon__sidebar-main"></i>
+                <label>YouTube Red</label>
+              </li>
             </ul>
           </div>
-        <button class="button__transparent logo hide-for-small-only">
+        <button class="button__transparent logo">
           <img src="images/youtube.png" alt="youtube-logo" height=40px width=80px>
         </button>
-        <button class="button__transparent logo show-for-small-only">
+        <button class="button__transparent logo">
           <img src="images/favicon.ico" alt="youtube-logo" height=40px width=40px>
         </button>
       </span>
@@ -474,9 +467,7 @@
     </footer>
   </div>
 
-  <script src="js/vendor/jquery.min.js"></script>
-  <script src="js/vendor/what-input.min.js"></script>
-  <script src="js/foundation.min.js"></script>
   <script src="js/app.js"></script>
+  
 </body>
 </html>

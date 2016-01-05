@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
 html {
   font-size: 1em;
@@ -45,9 +43,7 @@ h6 {font-size: 0.9em;}
 
 small, .font_small {font-size: 0.75em;}
 
-a:hover {
-  text-decoration: underline;
-}
+a:hover {text-decoration: underline;}
 
 button {
   background-color: transparent;
@@ -75,6 +71,10 @@ footer  {
 
 ul {
   list-style-type: none;
+}
+
+label {
+  display: flex;
 }
 
 .borders__top-bottom {
@@ -194,7 +194,7 @@ header {
 
 /* LEFT EXPANDED NAV - Triggered in nav__top-1-left */
 
-.nav__left-expand {
+.sidebar {
   display: none;
   position: fixed;
   top: 3.3rem;
@@ -207,14 +207,13 @@ header {
   overflow: scroll;
 }
 
-.nav__left-expand-ul {
+.sidebar__ul {
   width: 80%;
-  height: 100%;
   margin: 0.85rem auto 0;
   padding-left: 0;
 }
 
-  .icon__nav-expand-main {
+  .icon__sidebar-main {
     display: flex;
     justify-content: center;
     margin: 0 0.75rem;
@@ -223,7 +222,8 @@ header {
     width: 1rem;
   }
 
-  .nav__left-expand-subheading {
+  .sidebar__subheading {
+    display: flex;
     color: #CE1312;
     font-size: 11px;
     font-weight: 500;
@@ -232,25 +232,28 @@ header {
     margin-top: -0.5rem;
   }
 
-  .icon__nav-expand-sub{
+  .icon__sidebar-sub{
     height: 1.1rem;
     width: 1.2rem;
     margin: 0 0.7rem;
   }
 
-.nav__left-expand-tab:not(.button__blue),
-.nav__left-expand-subheading,
-.section__subscription {
+.sidebar__tab,
+.sidebar__subheading,
+.sidebar__section {
   line-height: 1.8rem;
-  display: flex;
   align-items: center;
 }
 
-.nav__left-expand-tab:hover:not(.nav__left-expand-subheading),
-.nav__left-expand-tab:hover .icon__nav-expand-main {
-  background-color: #444;
-  color: #FFF;
+.sidebar__tab {
+  display: flex;
 }
+
+  .sidebar__tab:hover,
+  .sidebar__tab:hover .icon__sidebar-main {
+    background-color: #444;
+    color: #FFF;
+  }
 
 .active__fill {
   background-color: #D01D19;
@@ -266,15 +269,14 @@ header {
     opacity: 0;
   }
 
-  .section__subscription:hover {
+  .sidebar__section:hover {
     background: transparent url('../images/subscriptions_hover.png') no-repeat center;
     background-size: contain;
     height: 153px;
-    width: 101%;
     border: 1px solid #E8E8E8;
   }
 
-  .button__blue {
+  .button__sidebar {
     line-height: 1.7rem;
     width: 169px;
     padding: 0.05rem;
@@ -282,11 +284,12 @@ header {
     color: #FFF;
     font-size: 11px;
     text-align: center;
+    border: 0;
     border-radius: 3px;
     margin: 0.1rem 0.1rem 0.2rem 0.1rem;
   }
 
-  .section__subscription-li {
+  .sidebar__section-li {
     color: #7C7C7C;
     display: flex;
     align-items: center;
@@ -445,12 +448,24 @@ footer {
 /*MAIN CONTENT*/
 
 .wrapper {
-  width: auto;
+  width: 438px;
   max-width: 1262px;
   min-width: 438px;
   margin: 7rem auto 3rem;
   border: 1px solid #E8E8E8;
   padding: 0 14px;
+}
+
+@media screen and (min-width: 705px) {
+  .wrapper {
+    width: 644px;
+  }
+}
+
+@media screen and (min-width: 911px) {
+  .wrapper {
+    width: 850px;
+  }
 }
 
 .grid__row-top {
@@ -475,7 +490,7 @@ footer {
   }
 
   .grid__row {
-    margin: 0 auto;
+    overflow: hidden;
   }
 
   .grid__row:not(.first-child):not(:last-child) {
@@ -492,6 +507,7 @@ footer {
   padding: 0 0.25rem 1rem 0.25rem;
   position: relative;
   margin: 0 auto;
+  float: left;
 }
 
   .preview__img {
