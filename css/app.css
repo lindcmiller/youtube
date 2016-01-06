@@ -43,8 +43,6 @@ h6 {font-size: 0.9em;}
 
 small, .font_small {font-size: 0.75em;}
 
-a:hover {text-decoration: underline;}
-
 button {
   background-color: transparent;
   outline: none;
@@ -59,8 +57,9 @@ button:hover:not(.button__transparent) {
   color: #565656;
 }
 
-.logo,
-.logo-mobile {
+.header-logo,
+.logo-mobile,
+.footer-logo {
   border: 0;
 }
 
@@ -204,9 +203,12 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 0.75rem;
-    color: #888;
     font-size: 1rem;
     width: 1rem;
+  }
+
+  .inactive__fill {
+    color: #888;
   }
 
   .sidebar__subheading {
@@ -217,6 +219,14 @@ header {
     text-transform: uppercase;
     padding-left: 0.3rem;
     margin-top: -0.5rem;
+  }
+
+    .sidebar__subheading:hover {text-decoration: underline;}
+
+  .sidebar__tab-link {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
   }
 
   .icon__sidebar-sub{
@@ -236,13 +246,13 @@ header {
   display: flex;
 }
 
-  .sidebar__tab:hover,
-  .sidebar__tab:hover .icon__sidebar-main {
+  .sidebar__tab-link:hover,
+  .sidebar__tab-link:hover .icon__sidebar-main {
     background-color: #444;
     color: #FFF;
   }
 
-.active__fill {
+#active__fill {
   background-color: #D01D19;
   color: #FFF;
 }

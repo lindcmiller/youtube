@@ -22,37 +22,51 @@
         </button>
           <div class="sidebar">
             <ul class="sidebar__ul">
-              <li class="sidebar__tab active__fill">
-                <i class="fa fa-home icon__sidebar-main active__fill"></i>
-                <label>Home</label>
+              <li class="sidebar__tab">
+                <a class="sidebar__tab-link" id="active__fill">
+                  <i class="fa fa-home icon__sidebar-main inactive__fill" id="active__fill"></i>
+                  <label>Home</label>
+                </a>
               </li>
               <li class="sidebar__tab">
-                <i class="fa fa-user icon__sidebar-main"></i>
-                <label>My Channel</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-user icon__sidebar-main inactive__fill"></i>
+                  <label>My Channel</label>
+                </a>
               </li>
               <li class="sidebar__tab">
-                <i class="fa fa-fire icon__sidebar-main"></i>
-                <label>Trending</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-fire icon__sidebar-main inactive__fill"></i>
+                  <label>Trending</label>
+                </a>
               </li>
               <li class="sidebar__tab">
-                <i class="fa fa-newspaper-o icon__sidebar-main"></i>
-                <label>Subscriptions</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-newspaper-o icon__sidebar-main inactive__fill"></i>
+                  <label>Subscriptions</label>
+                </a>
               </li>
               <li class="sidebar__tab">
-                <i class="fa fa-hourglass-end icon__sidebar-main"></i>
-                <label>History</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-hourglass-end icon__sidebar-main inactive__fill"></i>
+                  <label>History</label>
+                </a>
               </li>
               <li class="sidebar__tab">
-                <i class="fa fa-clock-o icon__sidebar-main"></i>
-                <label>Watch Later</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-clock-o icon__sidebar-main inactive__fill"></i>
+                  <label>Watch Later</label>
+                </a>
               </li>
             </ul>
 
             <ul class="sidebar__ul borders__top-bottom">
               <a class="sidebar__subheading">Playlists</a>
               <li class="sidebar__tab">
-                <i class="fa fa-thumbs-up icon__sidebar-main"></i>
-                <label>Liked Videos</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-thumbs-up icon__sidebar-main inactive__fill"></i>
+                  <label>Liked Videos</label>
+                </a>
               </li>
             </ul>
 
@@ -83,19 +97,25 @@
 
             <ul class="sidebar__ul borders__top-bottom">
               <li class="sidebar__tab">
-                <i class="fa fa-plus-circle icon__sidebar-main"></i>
-                <label>Browse channels</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-plus-circle icon__sidebar-main inactive__fill"></i>
+                  <label>Browse channels</label>
+                </a>
               </li>
               <li class="sidebar__tab">
-                <i class="fa fa-cog icon__sidebar-main"></i>
-                <label>Manage subscriptions</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-cog icon__sidebar-main inactive__fill"></i>
+                  <label>Manage subscriptions</label>
+                </a>
               </li>
             </ul>
 
             <ul class="sidebar__ul">
               <li class="sidebar__tab">
-                <i class="fa fa-youtube-play icon__sidebar-main"></i>
-                <label>YouTube Red</label>
+                <a class="sidebar__tab-link">
+                  <i class="fa fa-youtube-play icon__sidebar-main inactive__fill"></i>
+                  <label>YouTube Red</label>
+                </a>
               </li>
             </ul>
           </div>
@@ -384,7 +404,7 @@
   <footer>
 
     <div class="nav__bottom-1">
-      <button class="button__transparent logo">
+      <button class="button__transparent footer-logo">
         <img src="images/youtube.png" alt="youtube-logo" height=40px width=80px>
       </button>
       <button class="button__nav-bottom button__expand" onclick="showHideLanguages()">
