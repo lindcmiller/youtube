@@ -57,7 +57,7 @@ button:hover:not(.button__transparent) {
   color: #565656;
 }
 
-.header-logo,
+.logo-header,
 .logo-mobile,
 .footer-logo {
   border: 0;
@@ -205,9 +205,6 @@ header {
     margin: 0 0.75rem;
     font-size: 1rem;
     width: 1rem;
-  }
-
-  .inactive__fill {
     color: #888;
   }
 
@@ -252,7 +249,7 @@ header {
     color: #FFF;
   }
 
-#active__fill {
+.active__fill {
   background-color: #D01D19;
   color: #FFF;
 }
@@ -333,7 +330,7 @@ header {
 
 .wrapper {
   width: 438px;
-  max-width: 1262px;
+  max-width: 1255px;
   min-width: 438px;
   margin: 7rem auto 3rem;
   border: 1px solid #E8E8E8;
@@ -417,8 +414,10 @@ header {
 footer {
   margin-top: 3rem;
   border-top: 1px solid #E8E8E8;
+  min-width: 943px;
   width: 100%;
   position: absolute;
+  overflow: scroll;
 }
 
 .nav__bottom-1,
@@ -550,7 +549,7 @@ footer {
     }
 
     .button__upload,
-    .header-logo {
+    .logo-header {
       display: none;
     }
 
@@ -632,7 +631,7 @@ footer {
 /*large - 6 previews in row*/
 @media screen and (min-width: 1330px) {
   .wrapper {
-    width: 1262px;
+    width: 1255px;
   }
 }
 

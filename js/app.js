@@ -78,21 +78,21 @@ function setActiveUnderline(event) {
   event.target.classList.add('active__underline');
 };
 
-function setActiveFill(event) {
- var allExpandTabs = document.querySelectorAll('#active__fill');
- for(var index = 0; index < allExpandTabs.length; index++) {
-   allExpandTabs[index].removeAttribute('id');
- }
- event.target.setAttribute('id', 'active__fill');
-};
-
 // function setActiveFill(event) {
-//  var allExpandTabs = document.querySelectorAll('.active__fill');
+//  var allExpandTabs = document.querySelectorAll('#active__fill');
 //  for(var index = 0; index < allExpandTabs.length; index++) {
-//    allExpandTabs[index].classList.remove('active__fill');
+//    allExpandTabs[index].removeAttribute('id');
 //  }
-//  event.target.classList.add('active__fill');
+//  event.target.setAttribute('id', 'active__fill');
 // };
+
+function setActiveFill(event) {
+ var allExpandTabs = document.querySelectorAll('.active__fill');
+ for(var index = 0; index < allExpandTabs.length; index++) {
+   allExpandTabs[index].classList.remove('active__fill');
+ }
+ event.target.classList.add('active__fill');
+};
 
 function setActiveDarken(event) {
   if (document.querySelector('.active__darken') == null) {
