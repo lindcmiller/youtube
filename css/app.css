@@ -417,7 +417,7 @@ footer {
   min-width: 943px;
   width: 100%;
   position: absolute;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .nav__bottom-1,
@@ -471,7 +471,6 @@ footer {
   border-top: 1px solid #E8E8E8;
   width: 95%;
   margin: 0 auto;
-  padding-left: -0.5rem;
 }
 
 .copyright {
@@ -569,11 +568,15 @@ footer {
   }
 
   .nav__bottom-1,
-  .nav__bottom-2,
-  .nav__bottom-3 {
+  .nav__bottom-2 ul,
+  .nav__bottom-3 ul {
     margin-left: 0;
+    padding: 0;
   }
 
+  .border__top {
+    width: 100%;
+  }
 }
 
 /*small - 3 previews in row*/
