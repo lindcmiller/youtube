@@ -1,3 +1,9 @@
+// VARIABLES
+
+$border-grey: 1px solid #E8E8E8;
+
+// BASE STYLES
+
 * {box-sizing: border-box;}
 
 html {
@@ -44,7 +50,7 @@ h6 {font-size: 0.9em;}
 small, .font_small {font-size: 0.75em;}
 
 button {
-  background-color: transparent;
+  background: transparent;
   outline: none;
 
   &:hover:not(.button__transparent) {
@@ -66,7 +72,7 @@ button:not(.button__search) {
 header,
 .wrapper,
 footer  {
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 ul {
@@ -80,15 +86,11 @@ label {
 .borders__top-bottom {
   padding: 0.5rem 0;
   margin: 0.5rem 0;
-  border-top: 1px solid #E8E8E8;
-  border-bottom: 1px solid #E8E8E8;
+  border-top: $border-grey;
+  border-bottom: $border-grey;
 }
 
-.spacer {
-  margin-top: 0.75rem;
-}
-
-/*HEADER ONLY */
+// HEADER ONLY
 
 header {
   position: fixed;
@@ -101,7 +103,7 @@ header {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  border-bottom: 1px solid #E8E8E8;
+  border-bottom: $border-grey;
 
   span {
     display: flex;
@@ -178,7 +180,7 @@ header {
   }
 }
 
-/* SIDEBAR NAV - Triggered in navigation__main-site */
+// SIDEBAR NAV - Triggered in navigation__main-site
 
 .sidebar {
   display: none;
@@ -186,7 +188,7 @@ header {
   top: 3.3rem;
   left: 0;
   background-color: #FFFFFF;
-  border-right: 1px solid #E8E8E8;
+  border-right: $border-grey;
   font-size: 13px;
   width: 227px;
   height: 100%;
@@ -255,7 +257,7 @@ header {
 
   .section__borders-allsides {
     padding: 0.25rem 0.25rem 0.1rem 0.25rem;
-    border: 1px solid #E8E8E8;
+    border: $border-grey;
 
     &:hover {
       opacity: 0;
@@ -267,7 +269,7 @@ header {
       background: transparent url('../images/subscriptions_hover.png') no-repeat center;
       background-size: contain;
       height: 152px;
-      border: 1px solid #E8E8E8;
+      border: $border-grey;
     }
 
     .button__sidebar {
@@ -297,14 +299,14 @@ header {
   }
 }
 
-/*HEADER SECOND ROW */
+// HEADER SECOND ROW
 
 .header__tabs {
   display: flex;
 	align-items: center;
 	justify-content: space-around;
   height: 2.65rem;
-  border-bottom: 1px solid #E8E8E8;
+  border-bottom: $border-grey;
   margin: 0 auto;
 
   .header__tabs-ul {
@@ -333,14 +335,14 @@ header {
   }
 }
 
-/*MAIN CONTENT*/
+// MAIN CONTENT
 
 .wrapper {
   width: 438px;
   max-width: 1255px;
   min-width: 438px;
   margin: 7rem auto 3rem;
-  border: 1px solid #E8E8E8;
+  border: $border-grey;
   padding: 0 14px;
 
   .grid__row-header {
@@ -369,7 +371,7 @@ header {
 
     &:not(:first-child),
     &:not(:last-child) {
-      border-bottom: 1px solid #E8E8E8;
+      border-bottom: $border-grey;
     }
 
     .preview {
@@ -413,11 +415,11 @@ header {
   }
 }
 
-/*FOOTER ONLY*/
+// FOOTER ONLY
 
 footer {
   margin-top: 3rem;
-  border-top: 1px solid #E8E8E8;
+  border-top: $border-grey;
   min-width: 943px;
   width: 100%;
   position: absolute;
@@ -464,7 +466,7 @@ footer {
   }
 
   .footer__ul-medium {
-    border-top: 1px solid #E8E8E8;
+    border-top: $border-grey;
     width: 100%;
 
     li {
@@ -489,7 +491,7 @@ footer {
   }
 }
 
-/*EXPANDED BOTTOM NAV*/
+// EXPANDED BOTTOM NAV
 
 .language__expand,
 .country__expand,
@@ -528,6 +530,10 @@ footer {
     }
   }
 
+  .footer__description {
+    margin-top: 0.75rem;
+  }
+
   p {
     margin: 0;
   }
@@ -537,9 +543,9 @@ footer {
   }
 }
 
-/*MEDIA QUERIES*/
+// MEDIA QUERIES
 
-/*smallest - 2 previews in row*/
+// smallest - 2 previews in row
 @media screen and (max-width: 705px) {
   .preview:nth-child(5),
   .preview:nth-child(4),
@@ -582,7 +588,7 @@ footer {
   }
 }
 
-/*small - 3 previews in row*/
+// small - 3 previews in row
 @media screen and (min-width: 705px) {
   .wrapper {
     width: 644px;
@@ -601,7 +607,7 @@ footer {
   }
 }
 
-/*medium - 4 previews in row*/
+// medium - 4 previews in row
 @media screen and (min-width: 910px) {
   .wrapper {
     width: 850px;
@@ -621,7 +627,7 @@ footer {
   }
 }
 
-/*large - 5 previews in row*/
+// large - 5 previews in row
 @media screen and (min-width: 1120px) {
   .wrapper {
     width: 1056px;
@@ -634,14 +640,14 @@ footer {
   }
 }
 
-/*large - 6 previews in row*/
+// large - 6 previews in row
 @media screen and (min-width: 1330px) {
   .wrapper {
     width: 1255px;
   }
 }
 
-/*EXTRAS*/
+// EXTRAS
 
 .clearfix:after {
    clear: both;
