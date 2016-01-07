@@ -1,6 +1,6 @@
 // VARIABLES
 
-$border-grey: 1px solid #E8E8E8;
+$border-light: 1px solid #E8E8E8;
 
 // BASE STYLES
 
@@ -86,8 +86,8 @@ label {
 .borders__top-bottom {
   padding: 0.5rem 0;
   margin: 0.5rem 0;
-  border-top: $border-grey;
-  border-bottom: $border-grey;
+  border-top: $border-light;
+  border-bottom: $border-light;
 }
 
 // HEADER ONLY
@@ -103,7 +103,7 @@ header {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  border-bottom: $border-grey;
+  border-bottom: $border-light;
 
   span {
     display: flex;
@@ -188,7 +188,7 @@ header {
   top: 3.3rem;
   left: 0;
   background-color: #FFFFFF;
-  border-right: $border-grey;
+  border-right: $border-light;
   font-size: 13px;
   width: 227px;
   height: 100%;
@@ -257,7 +257,7 @@ header {
 
   .section__borders-allsides {
     padding: 0.25rem 0.25rem 0.1rem 0.25rem;
-    border: $border-grey;
+    border: $border-light;
 
     &:hover {
       opacity: 0;
@@ -269,7 +269,7 @@ header {
       background: transparent url('../images/subscriptions_hover.png') no-repeat center;
       background-size: contain;
       height: 152px;
-      border: $border-grey;
+      border: $border-light;
     }
 
     .button__sidebar {
@@ -306,7 +306,7 @@ header {
 	align-items: center;
 	justify-content: space-around;
   height: 2.65rem;
-  border-bottom: $border-grey;
+  border-bottom: $border-light;
   margin: 0 auto;
 
   .header__tabs-ul {
@@ -342,7 +342,7 @@ header {
   max-width: 1255px;
   min-width: 438px;
   margin: 7rem auto 3rem;
-  border: $border-grey;
+  border: $border-light;
   padding: 0 14px;
 
   .grid__row-header {
@@ -371,7 +371,7 @@ header {
 
     &:not(:first-child),
     &:not(:last-child) {
-      border-bottom: $border-grey;
+      border-bottom: $border-light;
     }
 
     .preview {
@@ -419,7 +419,7 @@ header {
 
 footer {
   margin-top: 3rem;
-  border-top: $border-grey;
+  border-top: $border-light;
   min-width: 943px;
   width: 100%;
   position: absolute;
@@ -466,7 +466,7 @@ footer {
   }
 
   .footer__ul-medium {
-    border-top: $border-grey;
+    border-top: $border-light;
     width: 100%;
 
     li {
