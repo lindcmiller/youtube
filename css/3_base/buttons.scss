@@ -1,0 +1,75 @@
+button {
+  background: transparent;
+  outline: none;
+
+  &:hover:not(.button__transparent) {
+    background: #F0F0F0;
+    color: #565656;
+  }
+}
+
+button:not(.button__search) {
+  border-radius: 3px;
+}
+
+.button__search {
+  background: $color-button;
+  height: 28px;
+  width: 4.2rem;
+  border: 1px solid #C3C3C4;
+  margin-left: -0.05rem;
+  display: inline-flex;
+  justify-content: center;
+
+  @media screen and (max-width: 705px) {
+    width: 2.5rem;
+  }
+
+  @media screen and (max-width: 705px) {
+    width: 2.5rem;
+  }
+}
+
+.button__upload {
+  padding: 0.3rem 0.6rem;
+  margin: 0 1rem;
+  background: $color-button;
+  font-size: 11px;
+  border: 1px solid #D3D3D3;
+
+  @media screen and (max-width: 705px) {
+    display: none;
+  }
+}
+
+.button__sidebar {
+  line-height: 1.7rem;
+  width: 169px;
+  padding: 0.05rem;
+  background-color: #70AEDF;
+  color: $color-light;
+  font-size: 11px;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+  margin: 0.1rem 0.1rem 0.2rem 0.1rem;
+}
+
+.button__delete {
+  border: 0;
+}
+
+.button__footer,
+.button__save {
+  background-color: $color-button;
+  font-size: 12px;
+  border: 1px solid #D3D3D3;
+  height: 28px;
+  padding: 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button__footer {
+  margin: 0.5rem;
+}

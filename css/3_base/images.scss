@@ -1,0 +1,26 @@
+.img-user {
+  height: 2rem;
+  width: 3rem;
+}
+
+.logo-header,
+.logo-mobile,
+.footer-logo {
+  border: 0;
+}
+
+.logo-mobile {
+  @media screen and (max-width: 705px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 705px) {
+    display: none;
+  }
+}
+
+.logo-header {
+  @media screen and (max-width: 705px) {
+    display: none;
+  }
+}

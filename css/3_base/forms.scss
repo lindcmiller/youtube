@@ -1,0 +1,20 @@
+.input__search {
+  width: 582px;
+  min-width: 175px;
+  line-height: 1.4;
+  font-size: 16px;
+  padding-left: 0.4rem;
+
+  &:focus {
+    outline: 1px solid #265CBC;
+  }
+
+  @media screen and (max-width: 705px) {
+    min-width: 175px;
+  }
+
+  @media screen and (max-width: 1120px) {
+    width: 100%;
+    max-width: 4.2rem;
+  }    
+}

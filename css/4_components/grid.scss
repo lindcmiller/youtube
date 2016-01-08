@@ -1,0 +1,24 @@
+.grid__row-header {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0 0.2rem;
+  margin: 0 auto;
+
+    &:after {
+      @include clearfix;
+    }
+}
+
+.grid__row-heading {
+  display: flex;
+  margin: 0.5rem auto 0.5rem 0.25rem;
+}
+
+.grid__row {
+  overflow: hidden;
+
+  &:not(:first-child),
+  &:not(:last-child) {
+    border-bottom: $border-light;
+  }
+}

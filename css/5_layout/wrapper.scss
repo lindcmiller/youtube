@@ -1,0 +1,24 @@
+.wrapper {
+  width: 438px;
+  max-width: 1255px;
+  min-width: 438px;
+  margin: 7rem auto 3rem;
+  border: $border-light;
+  padding: 0 14px;
+
+  @media screen and (min-width: 705px) {
+    width: 644px;
+  }
+
+  @media screen and (min-width: 910px) {
+    width: 850px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    width: 1056px;
+  }
+
+  @media screen and (min-width: 1330px) {
+    width: 1255px;
+  }
+}
