@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +15,8 @@
 
 <body>
   <header>
-    <div class="nav__top-1 clearfix">
-      <span class="nav__top-1-left">
+    <div class="navigation__main clearfix">
+      <span class="navigation__main-site">
         <button class="button__transparent icon__nav" onclick="showHide()">
           <i class="fa fa-bars icon__nav"></i>
         </button>
@@ -127,39 +127,39 @@
         </button>
       </span>
 
-      <span class="nav__top-1-center">
+      <span class="navigation__main-search">
         <input class="input__search" />
         <button class="button__search">
           <i class="fa fa-search"></i>
         </button>
       </span>
 
-      <span class="nav__top-1-right">
+      <span class="navigation__main-user">
         <button class="button__upload">
           Upload
         </button>
-        <img class="user-img" src="images/user-img.png" alt="user-img">
+        <img class="img-user" src="images/user.png" alt="user-image">
       </span>
     </div>
 
-    <div class="nav__right">
-      <div class="nav__top-2">
-        <ul class="nav__top-2-all-tabs">
-          <li class="nav__top-2-tab active__underline">Home</li>
-          <li class="nav__top-2-tab">Trending</li>
-          <li class="nav__top-2-tab">Subscription</li>
+    <div class="nav__move">
+      <div class="header__tabs">
+        <ul class="header__tabs-ul">
+          <li class="header__tab active__underline">Home</li>
+          <li class="header__tab">Trending</li>
+          <li class="header__tab">Subscription</li>
         </ul>
       </div>
     </div>
 
   </header>
 
-  <div class="content__right">
+  <div class="content__move">
     <div class="wrapper">
-      <div class="grid__row-top clearfix">
+      <div class="grid__row-header clearfix">
         <h6 class="grid__row-heading">Recommended</h6>
       </div>
-      <div class="grid__row first-child">
+      <div class="grid__row">
         <div class="preview">
           <img class="preview__img" src="images/placeholder.jpg" alt="placeholder-img">
           <div class="preview__time">3:06</div>
@@ -248,7 +248,7 @@
         </div>
       </div>
 
-      <div class="grid__row-top clearfix">
+      <div class="grid__row-header clearfix">
         <h6 class="grid__row-heading">Recently Uploaded</h6>
         <button class="button__transparent button__delete">
           <img class="icon__delete" src="images/icon__delete.png" alt="delete-section">
@@ -299,7 +299,7 @@
         </div>
       </div>
 
-      <div class="grid__row-top clearfix">
+      <div class="grid__row-header clearfix">
         <h6 class="grid__row-heading">Watch It Again</h6>
         <button class="button__transparent button__delete">
           <img class="icon__delete" src="images/icon__delete.png" alt="delete-section">
@@ -350,7 +350,7 @@
         </div>
       </div>
 
-      <div class="grid__row-top clearfix">
+      <div class="grid__row-header clearfix">
         <h6 class="grid__row-heading">Popular Videos</h6>
         <button class="button__transparent button__delete">
           <img class="icon__delete" src="images/icon__delete.png" alt="delete-section">
@@ -401,80 +401,74 @@
         </div>
       </div>
     </div>
-  <footer>
-
-    <div class="nav__bottom-1">
-      <button class="button__transparent footer-logo">
-        <img src="images/youtube.png" alt="youtube-logo" height=40px width=80px>
-      </button>
-      <button class="button__nav-bottom button__expand" onclick="showHideLanguages()">
-        <img class="icon__language" src="images/icon__language.png" alt="language">
-        <label>Language: English</label>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <button class="button__nav-bottom button__expand" onclick="showHideCountries()">
-        <label>Country: Worldwide</label>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <button class="button__nav-bottom button__expand" onclick="showHideRestricted()">
-        <label>Restricted Mode: Off</label>
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <button class="button__nav-bottom">
-        <i class="fa fa-hourglass-end icon__nav-bottom"></i>
-        <label>History</label>
-      </button>
-      <button class="button__nav-bottom">
-        <i class="fa fa-question-circle icon__nav-bottom"></i>
-        <label>Help</label>
-      </button>
-    </div>
-
-    <div class="language__expand">
-      <div class="footer__sub-heading">Choose your language</div>
-      <p>This changes the language of the site. It won't change any text entered by users.</p>
-      <img src="images/language.png">
-    </div>
-
-    <div class="country__expand">
-      <div class="footer__sub-heading">Choose your content location</div>
-      <p>This changes the videos and channels shown to you. It won't change the language of the site.</p>
-      <img src="images/country.png">
-    </div>
-
-    <div class="restricted__expand">
-      <div class="footer__sub-heading">Restricted Mode</div>
-      <div class="spacer__top">
-        <p>·  Restricted Mode hides videos that may contain inappropriate content flagged by users and other signals. No filter is 100% accurate, but it should help you avoid most inappropriate content.</p>
-        <p>·  Your Restricted Mode setting will apply to this browser only.</p>
+    <footer>
+      <div class="footer__preferences">
+        <button class="button__transparent footer-logo">
+          <img src="images/youtube.png" alt="youtube-logo" height=40px width=80px>
+        </button>
+        <button class="button__footer button__preference" onclick="showHideLanguages()">
+          <img class="icon__language" src="images/icon__language.png" alt="language">
+          <label>Language: English</label>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="button__footer button__preference" onclick="showHideCountries()">
+          <label>Country: Worldwide</label>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="button__footer button__preference" onclick="showHideRestricted()">
+          <label>Restricted Mode: Off</label>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <button class="button__footer">
+          <i class="fa fa-hourglass-end icon__footer"></i>
+          <label>History</label>
+        </button>
+        <button class="button__footer">
+          <i class="fa fa-question-circle icon__footer"></i>
+          <label>Help</label>
+        </button>
       </div>
 
-      <form class="form__restricted" action="">
-        <div class="borders__top-bottom">
-          <input type="radio" name="restricted" value="on">On
-          <input type="radio" name="restricted" value="off">Off
+      <div class="language__expand">
+        <div class="footer__sub-heading">Choose your language</div>
+        <p>This changes the language of the site. It won't change any text entered by users.</p>
+        <img src="images/language.png">
+      </div>
+
+      <div class="country__expand">
+        <div class="footer__sub-heading">Choose your content location</div>
+        <p>This changes the videos and channels shown to you. It won't change the language of the site.</p>
+        <img src="images/country.png">
+      </div>
+
+      <div class="restricted__expand">
+        <div class="footer__sub-heading">Restricted Mode</div>
+        <div class="footer__description">
+          <p>·  Restricted Mode hides videos that may contain inappropriate content flagged by users and other signals. No filter is 100% accurate, but it should help you avoid most inappropriate content.</p>
+          <p>·  Your Restricted Mode setting will apply to this browser only.</p>
         </div>
 
-        <br><button class="button__save" type="submit">Save</button>
-      </form>
-    </div>
+        <form class="form__restricted" action="">
+          <div class="borders__top-bottom">
+            <input type="radio" name="restricted" value="on">On
+            <input type="radio" name="restricted" value="off">Off
+          </div>
 
-    <div class="border__top">
-    </div>
-      <div class="nav__bottom-2">
-        <ul>
-          <li>About</li>
-          <li>Press</li>
-          <li>Copyright</li>
-          <li>Creators</li>
-          <li>Advertise</li>
-          <li>Developers</li>
-          <li>+YouTube</li>
-        </ul>
+          <br><button class="button__save" type="submit">Save</button>
+        </form>
       </div>
 
-    <div class="nav__bottom-3">
-      <ul>
+      <ul class="footer__ul-medium">
+        <li>About</li>
+        <li>Press</li>
+        <li>Copyright</li>
+        <li>Creators</li>
+        <li>Advertise</li>
+        <li>Developers</li>
+        <li>+YouTube</li>
+      </ul>
+      <br>
+      <ul class="footer__ul-small">
         <li>Terms</li>
         <li>Privacy</li>
         <li>Policy & Safety</li>
@@ -482,8 +476,6 @@
         <li>Try something new!</li>
         <li class="copyright">© 2015 YouTube, LLC</li>
       </ul>
-    </div>
-
     </footer>
   </div>
 

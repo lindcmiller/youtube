@@ -1,6 +1,10 @@
 // VARIABLES
 
 $border-light: 1px solid #E8E8E8;
+$color-light: #FFF;
+$color-accent: #0678C9;
+$color-hover-icon: #5D5C5D;
+$color-button: #F8F8F8;
 
 // BASE STYLES
 
@@ -72,7 +76,7 @@ button:not(.button__search) {
 header,
 .wrapper,
 footer  {
-  background-color: #FFF;
+  background: $color-light;
 }
 
 ul {
@@ -114,7 +118,7 @@ header {
     margin-left: 1.8rem;
 
     &:hover .icon__nav {
-      color: #888;
+      color: $color-hover-icon;
     }
 
     .icon__nav {
@@ -140,7 +144,7 @@ header {
     }
 
     .button__search {
-      background: #F8F8F8;
+      background: $color-button;
       height: 28px;
       width: 4.2rem;
       border: 1px solid #C3C3C4;
@@ -154,7 +158,7 @@ header {
       }
 
       &:hover .fa {
-        color: #5D5C5D;
+        color: $color-hover-icon;
       }
     }
   }
@@ -168,7 +172,7 @@ header {
     .button__upload {
       padding: 0.3rem 0.6rem;
       margin: 0 1rem;
-      background: #F8F8F8;
+      background: $color-button;
       font-size: 11px;
       border: 1px solid #D3D3D3;
     }
@@ -187,7 +191,7 @@ header {
   position: fixed;
   top: 3.3rem;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: $color-light;
   border-right: $border-light;
   font-size: 13px;
   width: 227px;
@@ -231,7 +235,7 @@ header {
         &:hover,
         &:hover .icon__sidebar-main {
           background-color: #444;
-          color: #FFF;
+          color: $color-light;
         }
 
         .icon__sidebar-main {
@@ -246,10 +250,10 @@ header {
 
       .active__fill {
         background-color: #D01D19;
-        color: #FFF;
+        color: $color-light;
 
         .icon__sidebar-main {
-          color: #FFF;
+          color: $color-light;
         }
       }
     }
@@ -277,7 +281,7 @@ header {
       width: 169px;
       padding: 0.05rem;
       background-color: #70AEDF;
-      color: #FFF;
+      color: $color-light;
       font-size: 11px;
       text-align: center;
       border: 0;
@@ -393,14 +397,14 @@ header {
         position: absolute;
         bottom: 4.75rem;
         right: 0.35rem;
-        color: #FFF;
+        color: $color-light;
         background: rgba(0,0,0,0.8);
         padding: 0 0.2rem;
         text-align: center;
       }
 
       .preview__heading {
-        color: #0678C9;
+        color: $color-accent;
         font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
@@ -409,7 +413,16 @@ header {
       }
 
       .preview__author a:hover {
-        color: #0678C9;
+        color: $color-accent;
+      }
+
+      @media screen and (max-width: 705px) {
+        .preview:nth-child(5),
+        .preview:nth-child(4),
+        .preview:nth-child(3),
+        .preview:nth-child(2) {
+          display: none;
+        }
       }
     }
   }
@@ -441,7 +454,7 @@ footer {
 
     .button__footer,
     .button__save {
-      background-color: #F8F8F8;
+      background-color: $color-button;
       font-size: 12px;
       border: 1px solid #D3D3D3;
       height: 28px;
@@ -510,7 +523,7 @@ footer {
 .icon__footer {
   padding: 0 0.5rem 0 0.25rem;
   font-size: 0.9rem;
-  color: #808080;
+  color: #888;
 }
 
 .footer__sub-heading {
